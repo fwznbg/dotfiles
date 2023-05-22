@@ -47,6 +47,10 @@ local plugins = {
     end,
   },
 
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = overrides.telescope,
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

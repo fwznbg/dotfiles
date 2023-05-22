@@ -59,4 +59,7 @@ M.nvimtree = {
   },
 }
 
+M.telescope = {
+}
+
 return M

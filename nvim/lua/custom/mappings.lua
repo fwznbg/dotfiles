@@ -7,6 +7,13 @@ M.general = {
   },
 }
 
+M.telescope = {
+  plugin = true,
+  n = {
+    ["<leader>fr"] = { "<cmd> Telescope resume <CR>", "resume find" },
+  }
+}
+
 -- more keybinds!
 
 return M

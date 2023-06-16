@@ -6,6 +6,7 @@ M.treesitter = {
     "lua",
     "html",
     "css",
+    "python",
     "javascript",
     "typescript",
     "tsx",
@@ -18,6 +19,9 @@ M.treesitter = {
     -- disable = {
     --   "python"
     -- },
+  },
+  autotag = {
+    enable = true
   },
 }
 

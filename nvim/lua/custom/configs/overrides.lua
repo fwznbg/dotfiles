@@ -13,6 +13,8 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "sql",
+    "java"
   },
   indent = {
     enable = true,
@@ -40,6 +42,12 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- sql
+    "sqlls",
+
+    "python-lsp-server",
+    "jdtls",
   },
 }
 

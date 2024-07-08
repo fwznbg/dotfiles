@@ -15,9 +15,13 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # alias
-alias cat=bat
+# alias cat=bat
 alias vim=nvim
-alias rm="rm -iv"
+# alias rm="rm -i"
+alias blackhole="rm -rf"
+
+# rvm
+source $HOME/.rvm/scripts/rvm
 
 
 # homebrew
@@ -30,7 +34,11 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/bin/java:$PATH
-
+export PATH=$PATH:/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+export PATH="$PATH:$HOME/.cargo/bin"
+setopt HIST_IGNORE_SPACE
 
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
@@ -39,3 +47,6 @@ eval "$(fzf --zsh)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

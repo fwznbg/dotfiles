@@ -26,6 +26,7 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 # alias
 # alias cat=bat
 alias vim=nvim
+alias vi=nvim
 # alias rm="rm -i"
 alias blackhole="rm -rf"
 

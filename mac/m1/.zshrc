@@ -27,8 +27,6 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 # alias cat=bat
 alias vim=nvim
 alias vi=nvim
-# alias rm="rm -i"
-alias blackhole="rm -rf"
 
 # homebrew
 export HOMEBREW_PREFIX="/opt/homebrew";
@@ -51,13 +49,24 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # alias for pyenv
 alias python="$(pyenv which python)"
 alias pip="$(pyenv which pip)"
+alias nvm=fnm
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+eval "$(fnm env)"
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 eval "$(rbenv init -)"
 
-source $(brew --prefix nvm)/nvm.sh
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

@@ -51,8 +51,9 @@ export PATH=$PATH:$GOPATH/bin
 # export PATH="$PATH:$HOME/.cargo/bin"
 
 # alias for pyenv
-alias python="$(pyenv which python)"
-alias pip="$(pyenv which pip)"
+# alias python="$(pyenv which python)"
+# alias pip="$(pyenv which pip)"
+#
 
 # fnm
 alias nvm=fnm
@@ -71,14 +72,20 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 eval "$(zoxide init zsh)"
 # eval "$(fzf --zsh)"
 source <(fzf --zsh)
+
+
+export GEM_HOME="$HOME/.gem"
 eval "$(rbenv init -)"
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# export SDKMAN_DIR="$HOME/.sdkman"
+# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-# export SDKMAN_DIR="$HOME/.sdkman"
-# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

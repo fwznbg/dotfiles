@@ -7,17 +7,14 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 # nvim
 brew install neovim
 
-# vscode
-brew install --cask visual-studio-code
-
-# orbstack
-brew install orbstack
-
 # zsh
 brew install powerlevel10k
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
 brew install zoxide
+
+# deps
+brew install ripgrep
 brew install fzf
 
 # version manager
@@ -29,8 +26,30 @@ curl -s "https://get.sdkman.io" | bash
 # window manager
 brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai
+brew tap FelixKratz/formulae
+brew install borders
 
 # go
 brew install golang
 mkdir -p $HOME/go/{bin,src}
+
+# vscode
+brew install --cask visual-studio-code
+
+# redis
+brew tap ringohub/redis-cli
+brew update && brew doctor
+brew install redis-cli
+
+
+# orbstack
+brew install orbstack
+brew install kubectl
+
+brew install --cask obsidian
+brew install --cask aldente
+
+# psql
+brew install libpq
+
 

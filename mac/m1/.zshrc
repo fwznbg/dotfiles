@@ -40,6 +40,7 @@ alias vi=nvim
 # go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+alias go=go1.22.6
 
 # export JRUBY_HOME="$HOME/.rbenv/versions/jruby-9.2.21.0"
 

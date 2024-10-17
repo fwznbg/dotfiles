@@ -1,0 +1,86 @@
+{
+    "workbench.sideBar.location": "right",
+    "editor.lineNumbers": "relative",
+    "editor.renderWhitespace": "boundary",
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "g", "d"
+            ],
+            "commands": [
+                "editor.action.revealDefinitionAside"
+            ]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.smartRelativeLine": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": false,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "editor.rulers": [
+            120
+        ],
+        "editor.semanticHighlighting.enabled": true
+    },
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "ruby.useLanguageServer": true,
+    "rubyLsp.rubyVersionManager": {
+        "identifier": "rbenv"
+    },
+    // "ruby.intellisense": "rubyLocate",
+    "salesforcedx-vscode-apex.java.home": "/Users/muhammad.naabigh/.sdkman/candidates/java/17.0.11-tem",
+    "[apex]": {
+        "editor.defaultFormatter": "redhat.java",
+    },
+    "terminal.integrated.macOptionIsMeta": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "go.goroot": "/opt/homebrew/Cellar/go/1.23.1/libexec",
+    "ruby.codeCompletion": "rcodetools",
+    "rubyLsp.enableExperimentalFeatures": true,
+    "hediet.vscode-drawio.resizeImages": null,
+}

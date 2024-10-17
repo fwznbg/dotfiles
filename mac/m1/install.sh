@@ -52,4 +52,7 @@ brew install --cask aldente
 # psql
 brew install libpq
 
-
+# diff 
+brew install diff-so-fancy
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RF"
+git config --global interactive.diffFilter "diff-so-fancy --patch"

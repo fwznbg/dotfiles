@@ -40,7 +40,7 @@ alias vi=nvim
 # go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-alias go=go1.22.6
+alias go=go1.24.0
 
 # export JRUBY_HOME="$HOME/.rbenv/versions/jruby-9.2.21.0"
 
@@ -80,6 +80,18 @@ eval "$(rbenv init -)"
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
+alias gst="git status"
+alias gco="git checkout"
+alias gpl="git pull"
+alias gps="git push"
+alias gsh="git stash"
+alias gshp="git stash pop"
+alias gibran="git branch"
+
+# cloud related
+alias kctx='f() { [ "$1" ] && kubectl config set-context --current --namespace $1; } ; f'
+alias tsh_login='tsh login --proxy=teleport-ods.golabs.io:443 --auth=teleport-oidc telport-prod-auth-server'
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 # export SDKMAN_DIR="$HOME/.sdkman"
 # [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -90,3 +102,16 @@ if [ -f '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/path.zsh.inc' ]; the
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/muhammad.naabigh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/muhammad.naabigh/.opam/opam-init/init.zsh' ]] || source '/Users/muhammad.naabigh/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+#
+alias otpvpn="pass otp -c otp/gojek"
+alias otpgitlab="pass otp -c otp/gitlab-golabs"
+alias otpsf="pass otp -c otp/salesforce"

@@ -36,6 +36,9 @@ mkdir -p $HOME/go/{bin,src}
 # vscode
 brew install --cask visual-studio-code
 
+# zed
+brew install --cask zed
+
 # redis
 brew tap ringohub/redis-cli
 brew update && brew doctor
@@ -56,3 +59,5 @@ brew install libpq
 brew install diff-so-fancy
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RF"
 git config --global interactive.diffFilter "diff-so-fancy --patch"
+
+brew install pass-otp

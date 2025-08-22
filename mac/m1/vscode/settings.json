@@ -23,6 +23,48 @@
             "commands": [
                 "editor.action.revealDefinitionAside"
             ]
+        },
+        {
+            "before": [
+                "g", "D"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "tab"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "shift+tab"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "tab"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "shift+tab"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
         }
     ],
     "vim.useSystemClipboard": true,
@@ -61,7 +103,6 @@
         ],
         "editor.semanticHighlighting.enabled": true
     },
-    "workbench.colorTheme": "Gruvbox Dark Hard",
     "ruby.useLanguageServer": true,
     "rubyLsp.rubyVersionManager": {
         "identifier": "rbenv"
@@ -79,8 +120,25 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "typescript.preferences.importModuleSpecifier": "non-relative",
-    "go.goroot": "/opt/homebrew/Cellar/go/1.23.1/libexec",
+    "go.goroot": "/Users/muhammad.naabigh/sdk/go1.24.0",
     "ruby.codeCompletion": "rcodetools",
-    "rubyLsp.enableExperimentalFeatures": true,
     "hediet.vscode-drawio.resizeImages": null,
+    "editor.minimap.enabled": false,
+    "rubyLsp.featureFlags": {
+        "all": true
+    },
+    "github.copilot.enable": {
+        "ocaml": false
+    },
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "files.associations": {
+        "*.py": "python"
+    },
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "calva.paredit.defaultKeyMap": "original",
+    "docker.extension.enableComposeLanguageServer": false,
+    "go.toolsManagement.autoUpdate": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
 }

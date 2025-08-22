@@ -9,6 +9,7 @@
   {
     "context": "Workspace",
     "bindings": {
+      "shift-escape": "workspace::ToggleZoom"
       // "shift shift": "file_finder::Toggle"
     }
   },
